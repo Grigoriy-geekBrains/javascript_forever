@@ -1,0 +1,63 @@
+.footer
+  margin-top: 109px
+  &__information
+    display: flex
+    justify-content: space-between
+    height: 260px
+    overflow: hidden
+    .footer__big__information
+      max-width: 30%
+      margin-top: 0
+    .footer__information-caption
+      +text-option(18px,700,$color-site,0.45px)
+      text-transform: uppercase
+      .footer__container-logo
+        @extend .flex
+        .logo
+          @extend .flex
+          +text-option(27px,300,#3e3e40)
+          text-transform: uppercase
+          &_img
+            margin-right: 13px
+            @extend .letter
+    &-block
+      margin-top: 14px
+      .text
+        margin-top: 41px
+        +text-option(14px,300,#898989,0.35px)
+        line-height: 24px
+        margin-bottom: 20px
+  .footer__link
+    +text-option(16px,400,#898989,0.4px)
+    display: block
+    padding: 8px
+    margin-top: 10px
+    border-bottom: 2px solid transparent
+    &:hover
+      border-bottom: 2px solid $color-site
+  &__copyright
+    height: 79px
+    margin-top: 89px
+    background-color: #e6e6e6
+    &-flex
+      @extend .flex
+      justify-content: space-between
+      height: 100%
+    .copyright
+      +text-option(16px,400,#7a7a7a,0.4px)
+    .social__icon
+      @extend .flex
+      +text-option(16px,400,#b2b2b2,0.4px)
+      justify-content: center
+      background-color: #fff
+      width: 32px
+      height: 32px
+      float: left
+      margin-left: 8px
+      &:hover
+        transition: all .3s linear
+        background-color: $color-site
+        color: #fff
+
+
+

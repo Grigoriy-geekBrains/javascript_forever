@@ -1,0 +1,17 @@
+=text-option($size: inherit,$weight: inherit,$color: inherit,$letter-spacing: inherit)
+  font-size: $size
+  font-weight: $weight
+  letter-spacing: $letter-spacing
+  color: $color
+
+=arrow($side)
+  border: 6px solid transparent
+  margin-left: 8px
+  width: 0
+  height: 0
+  @if $side == bottom
+    border-top: 0
+    border-bottom-color: #838383
+  @else
+    border-bottom: 0
+    border-top-color: #838383

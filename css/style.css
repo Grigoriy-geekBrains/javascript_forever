@@ -1,5 +1,4 @@
 .goods {
-  display: none;
   flex-direction: column; }
 
 .header {
@@ -380,9 +379,6 @@ ul {
     transform: scale(1); }
   100% {
     transform: scale(1.1); } }
-.product__blank {
-  display: none; }
-
 .flex_product, .wrapper, .like-also__flex .product {
   display: flex;
   justify-content: center;
@@ -1393,11 +1389,4 @@ ul {
     .checkout__content .checkout__menu_address .checkout__address_right .checkout__registration_form .checkout__registration_buttons {
       margin-top: 32px; }
 
-.show {
-  display: flex; }
-
-.showBlock {
-  display: block; }
-
-.hide {
-  display: none; }
+/*# sourceMappingURL=style.css.map */

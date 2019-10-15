@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="app">
+        <error-fetch-component :error="errorFetch" @close="closeWindowError"></error-fetch-component>
         <div class="wrapper">
             <div class="top">
                 <header class="header">
@@ -48,39 +49,41 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="text" class="search" placeholder="Search for Item...">
-                                <button type="submit" class="submit__button"><i class="fas fa-search"></i></button>
+                                <search-component @onsearchclick="searchGoods"></search-component>
+<!--                                <input type="text" class="search" v-model="searchContent" placeholder="Search for Item...">-->
+<!--                                <button class="submit__button"><i @click="searchGoods" class="fas fa-search"></i></button>-->
                             </form>
                         </div>
 
                         <div class="header__right">
-                            <div class="header__cart">
-                                <a class="header__cart_link" href="shopping.html"></a>
-                                <div class="cart-menu">
-                                    <div class="goods">
-                                        <div v-if="cart.length === 0">Корзина пуста</div>
-                                        <div v-for="product in cart" :key="product.id" class="cart-menu-section">
-                                            <img :src="product.img" class="cart-product" alt="#"/>
-                                            <div class="cart-menu-info">
-                                                <p class="cart-menu-info-caption">{{product.caption}}</p>
-                                                <img class="cart-menu-info-rating" src="img/stars.png" alt="rating"/>
-                                                <p class="cart-menu-info-price">{{product.qty}}<span class="quantity"></span><span class="multi"> x </span><span class="price">{{'$' + product.price}}</span></p>
-                                            </div>
-                                            <a @click="deleteFromCart" class="cart-menu-iconClosed"><i :data-id="product.id" class="far fa-times-circle"></i></a>
-                                        </div>
-                                    </div>
-                                    <div v-if="cart.length !== 0" class="commonInfo hide">
-                                        <div class="cart-menu-total_price">
-                                            <p class="total_price">TOTAL</p>
-                                            <p class="total_price sumCost">{{findTotal}}</p>
-                                        </div>
-                                        <div class="cart-menu-buttons">
-                                            <a href="checkout.html" class="cart-menu-button">Checkout</a>
-                                            <a href="shopping.html" class="cart-menu-button">Go to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <cart-component :cart="cart" :find-total="findTotal" @delete="deleteFromCart"></cart-component>
+<!--                            <div class="header__cart">-->
+<!--                                <a class="header__cart_link" href="shopping.html"></a>-->
+<!--                                <div class="cart-menu">-->
+<!--                                    <div class="goods">-->
+<!--                                        <div v-if="cart.length === 0">Корзина пуста</div>-->
+<!--                                        <div v-for="product in cart" :key="product.id" class="cart-menu-section">-->
+<!--                                            <img :src="product.img" class="cart-product" alt="#"/>-->
+<!--                                            <div class="cart-menu-info">-->
+<!--                                                <p class="cart-menu-info-caption">{{product.caption}}</p>-->
+<!--                                                <img class="cart-menu-info-rating" src="img/stars.png" alt="rating"/>-->
+<!--                                                <p class="cart-menu-info-price">{{product.qty}}<span class="quantity"></span><span class="multi"> x </span><span class="price">{{'$' + product.price}}</span></p>-->
+<!--                                            </div>-->
+<!--                                            <a @click="deleteFromCart(product.id)" class="cart-menu-iconClosed"><i :data-id="product.id" class="far fa-times-circle"></i></a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div v-if="cart.length !== 0" class="commonInfo hide">-->
+<!--                                        <div class="cart-menu-total_price">-->
+<!--                                            <p class="total_price">TOTAL</p>-->
+<!--                                            <p class="total_price sumCost">{{findTotal}}</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="cart-menu-buttons">-->
+<!--                                            <a href="checkout.html" class="cart-menu-button">Checkout</a>-->
+<!--                                            <a href="shopping.html" class="cart-menu-button">Go to cart</a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                             <a href="#" class="cart_button">My Account</a>
                         </div>
                     </div>
@@ -262,14 +265,14 @@
                             <div class="wrapper">
                                 <!-- Галерея товаров -->
                                 <div class="product__gallery">
-                                    <div v-for="product in products" class="product__container">
+                                    <div v-for="product in filterGoods" class="product__container">
                                         <img :src="product.img" class="product__img" alt="#"/>
                                         <div class="product__items-text">
                                             <p class="product__items-caption">{{product.caption}}</p>
                                             <p class="product__items-price">{{'$' + product.price}}</p>
                                             <p class="product__stars"><img src="img/stars.png" alt="stars"/></p>
                                         </div>
-                                        <a @click="addToCart" href="#" :data-id="product.id" class="product__addToCart">Add to Cart</a>
+                                        <a @click="addToCart(product.id)" href="#" :data-id="product.id" class="product__addToCart">Add to Cart</a>
                                     </div>
                                 </div>
                                 <div class="nav__pages">

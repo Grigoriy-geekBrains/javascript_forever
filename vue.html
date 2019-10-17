@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <input type="text" v-model="fullName" />
+    <h2 v-if="fullName.length !== 0">Hello, {{transformedFullName}}</h2>
+    <h2 v-if="fullName.length === 0">Поле пустое</h2>
+    <ul>
+      <li v-for="db in dbs" @click="handleListItemClick(db)">{{db}}</li>
+    </ul>
+    <button @click="handleButtonClick">Click me</button>
+  </div>
+  <script>
+    const app = new Vue({
+      el: '#root',
+      data: {
+        fullName: 'Luke Skywalker',
+        dbs: ['MySQL', 'MongoDB', 'PostgreSQL', 'RethinkDB', 'Redis'],
+      },
+      methods: {
+        handleButtonClick() {
+          console.log('Button has been clicked!');
+        },
+        handleListItemClick(db) {
+          console.log('Item has been clicked:', db);
+        }
+      },
+      mounted() {
+        console.log('Application has been mounted!');
+      },
+      computed: {
+        transformedFullName() {
+          return 'Mr. ' + this.fullName.toUpperCase();
+        }
+      },
+    });
+  </script>
+</body>
+
+</html>

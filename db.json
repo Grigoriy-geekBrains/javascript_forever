@@ -1,11 +1,54 @@
 {
-  "products" : [
-    {"id": 1, "img": "../img/gallery/pic1.png", "quality": 5, "caption": "Mango  People  T-shirt", "price": 52, "quantity": 1},
-    {"id": 2, "img": "../img/gallery/pic2.png", "quality": 3, "caption": "Mango  People  T-price", "price": 10, "quantity": 1},
-    {"id": 3, "img": "../img/gallery/pic3.png", "quality": 5, "caption": "Mango  People  T-shirt", "price": 6,  "quantity": 1},
-    {"id": 4, "img": "../img/gallery/pic4.png", "quality": 5, "caption": "Mango  People  T-shirt", "price": 32, "quantity": 1},
-    {"id": 5, "img": "../img/gallery/pic5.png", "quality": 5, "caption": "Mango  People  T-shirt", "price": 18, "quantity": 1},
-    {"id": 6, "img": "../img/gallery/pic6.png", "quality": 5, "caption": "Mango  People  T-shirt", "price": 15, "quantity": 1},
-    {"id": 7, "img": "../img/gallery/pic7.png", "quality": 5, "caption": "Mango  People  T-shirt", "price": 96, "quantity": 1}
-  ]
+  "products": [
+    {
+      "id": 1,
+      "img": "../img/gallery/pic1.png",
+      "quality": 5,
+      "caption": "Mango",
+      "price": 52
+    },
+    {
+      "id": 2,
+      "img": "../img/gallery/pic2.png",
+      "quality": 3,
+      "caption": "Mango People ",
+      "price": 10
+    },
+    {
+      "id": 3,
+      "img": "../img/gallery/pic3.png",
+      "quality": 5,
+      "caption": "Mango T-shirt",
+      "price": 6
+    },
+    {
+      "id": 4,
+      "img": "../img/gallery/pic4.png",
+      "quality": 5,
+      "caption": "People T-shirt",
+      "price": 32
+    },
+    {
+      "id": 5,
+      "img": "../img/gallery/pic5.png",
+      "quality": 5,
+      "caption": "Mango People T-shirt",
+      "price": 18
+    },
+    {
+      "id": 6,
+      "img": "../img/gallery/pic6.png",
+      "quality": 5,
+      "caption": "Mango People Suit",
+      "price": 15
+    },
+    {
+      "id": 7,
+      "img": "../img/gallery/pic7.png",
+      "quality": 5,
+      "caption": "Mango Woman T-shirt",
+      "price": 96
+    }
+  ],
+  "cart": []
 }

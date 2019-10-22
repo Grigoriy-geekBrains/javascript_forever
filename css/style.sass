@@ -59,14 +59,34 @@ ul
 .kids
   background-image: url(../img/kids.png)
 
+.errorFetch
+  position: absolute
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 500px
+  height: 200px
+  border: 1px solid #333
+  border-radius: 10px
+  left: 40%
+  top: 15%
+  background-color: rgba(255, 0, 0, 0.68)
+  &__text
+    color: #ffffff
+    font-size: 22px
+    font-weight: bold
+  &__button
+    width: 100px
+    height: 25px
+    margin-top: 20px
+    cursor: pointer
+
 @keyframes scale
   0%
     transform: scale(1)
   100%
     transform: scale(1.1)
-
-.product__blank
-  display: none
 
 .flex_product
   display: flex
@@ -241,7 +261,6 @@ ul
       .offer__info__mini-text
         +text-option(14px,300,#fbfbfb)
         line-height: 24px
-
 
 
 .subscribe
@@ -474,8 +493,6 @@ ul
           background-color: #fff
 
 
-
-
 .wrapper
   @extend .flex_product
   .nav__pages
@@ -525,8 +542,6 @@ ul
         line-height: 24px
 
 
-
-
 .subscribe__page__product
   margin-top: 0
   @extend .subscribe
@@ -553,7 +568,6 @@ ul
         background-color: $color-site
     .carousel__img
       margin-top: 11px
-
 
 
 .description__content
@@ -912,15 +926,6 @@ ul
         .checkout__registration_buttons
           @extend .flex
           margin-top: 32px
-
-.show
-  display: flex
-
-.showBlock
-  display: block
-
-.hide
-  display: none
 
 
 

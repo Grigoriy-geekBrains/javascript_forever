@@ -29,6 +29,9 @@ a
 ul
   list-style: none
 
+input
+  outline: none
+
 .last-mega-menu
   left: auto
   right: -5px
@@ -43,6 +46,9 @@ ul
 
 .letter
   color: $color-site
+
+.pageColor
+  color: $color-site!important
 
 .men
   background-image: url(../img/men.png)
@@ -97,11 +103,13 @@ ul
     display: flex
     flex-direction: column
     margin-bottom: 60px
+    width: 100%
     .product__big-text
       +text-option(30px,700,#222222,0.75px)
       text-align: center
     .product__mini-text
       +text-option(14px,400,#9f9f9f,0.35px)
+      text-align: center
   .product__gallery
     display: flex
     flex-wrap: wrap
@@ -724,6 +732,9 @@ ul
     border-bottom: 1px solid #eaeaea
     .shopping__details
       @extend .flex
+      &_image
+        width: 100px
+        height: 115px
     .shopping__parametrs
       margin-left: 21px
       +text-option(13px,700,#222222)
@@ -926,14 +937,6 @@ ul
         .checkout__registration_buttons
           @extend .flex
           margin-top: 32px
-
-
-
-
-
-
-
-
 
 
 

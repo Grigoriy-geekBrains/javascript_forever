@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping cart</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <div class="wrapper">
+        <div class="top">
+            <header class="header">
+                <header-component :cart="cart" :total="findTotal" @deletegoodsfromcart="deleteFromCart" @searchgoods="searchGoods"></header-component>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__list">
+                        <a class="menu__link" href="index.html">Home</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-section">
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jackets/Coats</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Denim</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Leggings/Pants</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Skirts/Shorts</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="mega-menu-section">
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jackets/Coats</a></li>
+                                </ul>
+
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="mega-menu-section">
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jackets/Coats</a></li>
+                                </ul>
+                                <img src="img/menInSunGlass.png" alt="menInSubGlass"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a class="menu__link" href="#">Man</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Women</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Kids</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Accoseriese</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Featured</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Hot Deals</a></li>
+                </ul>
+            </nav>
+            <div class="breadcrumb__page__shopping">
+                <div class="container breadcrumb__flex">
+                    <div class="breadcrumb__left">
+                        <p class="arrivals">New Arrivals </p>
+                    </div>
+                    <div class="breadcrumb__right">
+                        <div class="breadcrumb__nav">
+                            <a class="breadcrumb__nav-link" href="index.html">Home </a>
+                            <a class="breadcrumb__nav-link" href="#">Men </a>
+                            <a class="breadcrumb__nav-link current-link" href="shopping.html">New Arrivals </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <cart-info-component :cart="cart" @deletegoods="deleteFromCart"></cart-info-component>
+            <div class="controls">
+                <div class="container controls__flex">
+                    <div class="controls__button">cLEAR SHOPPING CART</div>
+                    <div class="controls__button">cONTINUE sHOPPING</div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="container details__flex">
+                    <div class="details__block-param">
+                        <p class="details_caption">Shipping Adress</p>
+                        <select class="details_input-param" name="">
+                            <option value="Bangladesh">Bangladesh</option>
+                        </select>
+                        <input class="details_input-param" type="text" placeholder="State"/>
+                        <input class="details_input-param" type="text" placeholder="Postcode / Zip"/>
+                        <a class="details__button-mini" href="#">get a quote</a>
+                    </div>
+                    <div class="details__block-param">
+                        <p class="details_caption">coupon  discount</p>
+                        <p class="details__discount_text">Enter your coupon code if you have one</p>
+                        <input class="details__discount_input details_input-param" type="text" placeholder="State"/>
+                        <a class="details__button-mini" href="#">Apply coupon</a>
+                    </div>
+                    <div class="details__checkout details__block-param">
+                        <div class="details__checkout_text">
+                            <p class="details__checkout_subtotal">Sub total<span class="details__checkout_subtotal details__checkout-margin">{{findTotal}}</span></p>
+                            <p class="details__checkout_grandtotal">GRAND TOTAL<span class="details__checkout_grandtotal details__checkout-margin details__checkout_grandtotal-color">{{findTotal}}</span></p>
+                        </div>
+                        <a class="details__checkout_button" href="#">proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+            <subscribe-component></subscribe-component>
+        </div>
+        <footer-component></footer-component>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

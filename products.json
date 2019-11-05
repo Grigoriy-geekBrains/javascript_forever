@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "img": "../img/goods_img/p1.png",
+    "quality": 5,
+    "caption": "Mango",
+    "price": 52,
+    "size": "XXL",
+    "color": "black",
+    "regard": "men",
+    "hits": 1
+  },
+  {
+    "id": 2,
+    "img": "../img/goods_img/p2.png",
+    "quality": 3,
+    "caption": "Mango People ",
+    "price": 10,
+    "size": "XL",
+    "color": "white",
+    "regard": "men",
+    "hits": 0
+  },
+  {
+    "id": 3,
+    "img": "../img/goods_img/p3.png",
+    "quality": 5,
+    "caption": "people T-shirt",
+    "price": 6,
+    "size": "SL",
+    "color": "black",
+    "regard": "women",
+    "hits": 0
+  },
+  {
+    "id": 4,
+    "img": "../img/goods_img/p4.png",
+    "quality": 5,
+    "caption": "People Mango",
+    "price": 32,
+    "size": "M",
+    "color": "red",
+    "regard": "men",
+    "hits": 0
+  },
+  {
+    "id": 5,
+    "img": "../img/goods_img/p5.png",
+    "quality": 5,
+    "caption": "suit",
+    "price": 18,
+    "size": "XL",
+    "color": "green",
+    "regard": "men",
+    "hits": 0
+  },
+  {
+    "id": 6,
+    "img": "../img/goods_img/p6.png",
+    "quality": 5,
+    "caption": "suit",
+    "price": 18,
+    "size": "XL",
+    "color": "green",
+    "regard": "women",
+    "hits": 0
+  },
+  {
+    "id": 7,
+    "img": "../img/goods_img/p7.png",
+    "quality": 5,
+    "caption": "trousers",
+    "price": 96,
+    "size": "XXXL",
+    "color": "blue",
+    "regard": "women",
+    "hits": 1
+  },
+  {
+    "id": 8,
+    "img": "../img/goods_img/p8.png",
+    "quality": 5,
+    "caption": "kivi",
+    "price": 52,
+    "size": "XXL",
+    "color": "orange",
+    "regard": "men",
+    "hits": 0
+  },
+  {
+    "id": 9,
+    "img": "../img/goods_img/p9.png",
+    "quality": 5,
+    "caption": "potato",
+    "price": 52,
+    "size": "M",
+    "color": "white",
+    "regard": "women",
+    "hits": 1
+  },
+  {
+    "id": 10,
+    "img": "../img/goods_img/p10.png",
+    "quality": 5,
+    "caption": "big potato",
+    "price": 52,
+    "size": "S",
+    "color": "yellow",
+    "regard": "men",
+    "hits": 0
+  },
+  {
+    "id": 11,
+    "img": "../img/goods_img/p11.png",
+    "quality": 5,
+    "caption": "green kivi",
+    "price": 52,
+    "size": "M",
+    "color": "red",
+    "regard": "women",
+    "hits": 0
+  },
+  {
+    "id": 12,
+    "img": "../img/goods_img/p12.png",
+    "quality": 5,
+    "caption": "apple",
+    "price": 52,
+    "size": "M",
+    "color": "green",
+    "regard": "men",
+    "hits": 1
+  },
+  {
+    "id": 13,
+    "img": "../img/goods_img/p13.png",
+    "quality": 5,
+    "caption": "fresh apple",
+    "price": 52,
+    "size": "S",
+    "color": "black",
+    "regard": "men",
+    "hits": 1
+  },
+  {
+    "id": 14,
+    "img": "../img/goods_img/p14.png",
+    "quality": 5,
+    "caption": "suit",
+    "price": 18,
+    "size": "XL",
+    "color": "blue",
+    "regard": "women",
+    "hits": 0
+  },
+  {
+    "id": 15,
+    "img": "../img/goods_img/p15.png",
+    "quality": 5,
+    "caption": "apple again",
+    "price": 52,
+    "size": "XL",
+    "color": "pink",
+    "regard": "men",
+    "hits": 1
+  },
+  {
+    "id": 16,
+    "img": "../img/goods_img/p16.png",
+    "quality": 5,
+    "caption": "dity",
+    "price": 52,
+    "size": "XXL",
+    "color": "grey",
+    "regard": "men",
+    "hits": 1
+  },
+  {
+    "id": 17,
+    "img": "../img/goods_img/p17.png",
+    "quality": 5,
+    "caption": "clear",
+    "price": 52,
+    "size": "S",
+    "color": "grey",
+    "regard": "men",
+    "hits": 0
+  },
+  {
+    "id": 18,
+    "img": "../img/goods_img/p18.png",
+    "quality": 5,
+    "caption": "clear",
+    "price": 52,
+    "size": "S",
+    "color": "grey",
+    "regard": "women",
+    "hits": 0
+  },
+  {
+    "id": 19,
+    "img": "../img/goods_img/p19.png",
+    "quality": 5,
+    "caption": "clear",
+    "price": 52,
+    "size": "S",
+    "color": "grey",
+    "regard": "women",
+    "hits": 0
+  }
+]

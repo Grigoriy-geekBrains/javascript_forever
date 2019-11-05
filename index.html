@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <div class="wrapper">
+        <div class="top">
+            <header class="header">
+                <header-component :cart="cart" @deletegoodsfromcart="deleteFromCart" @searchgoods="searchGoods"></header-component>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__list">
+                        <a class="menu__link" href="index.html">Home</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-section">
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jackets/Coats</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Denim</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Leggings/Pants</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Skirts/Shorts</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="mega-menu-section">
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jackets/Coats</a></li>
+                                </ul>
+
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="mega-menu-section">
+                                <div class="mega-menu-section-caption">Women</div>
+                                <ul class="mega-menu-list">
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Dresses</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Tops</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Sweaters/Knits</a></li>
+                                    <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jackets/Coats</a></li>
+                                </ul>
+                                <img src="img/menInSunGlass.png" alt="menInSubGlass"/>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list"><a class="menu__link" href="#">Man</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Women</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Kids</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Accoseriese</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Featured</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Hot Deals</a></li>
+                </ul>
+            </nav>
+            <div class="promo">
+                <div class="container promo__content">
+                    <div class="promo__text">
+                        <p class="promo__big-text">THE BRAND</p>
+                        <p class="promo__mini-text">OF LUXERIOUS <span class="promo__color">FASHION</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_section">
+                <div class="container main_section__content">
+                    <div class="main_section__left">
+                        <div class="picture men main_section__big_picture">
+                            <div class="picture__text">
+                                <p class="picture__mini-text">hOT dEAL</p>
+                                <p class="picture__big-text">FOR MEN</p>
+                            </div>
+                        </div>
+                        <div class="picture accesories main_section__mini_picture">
+                            <div class="picture__text">
+                                <p class="picture__mini-text">LUXIROUS & trendy</p>
+                                <p class="picture__big-text">ACCESORIES</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_section__right">
+                        <div class="picture women main_section__mini_picture">
+                            <div class="picture__text">
+                                <p class="picture__mini-text">30% offer</p>
+                                <p class="picture__big-text">women</p>
+                            </div>
+                        </div>
+                        <div class="picture kids main_section__big_picture">
+                            <div class="picture__text">
+                                <p class="picture__mini-text">new arrivals</p>
+                                <p class="picture__big-text">FOR kids</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="container flex_product">
+                    <div class="product__caption">
+                        <section class="product__big-text">Fetured Items</section>
+                        <p class="product__mini-text">Shop for items based on what we featured in this week</p>
+                    </div>
+                        <gallery-goods-component :products="products" @addtocart="addToCart" @tosinglepage="toSinglePage"></gallery-goods-component>
+                    </div>
+                    <div class="product__show-all">
+                        <a class="product__button" href="product.html">
+                            Browse All Product
+                            <img class="product__arrow" src="img/product_arrow.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="container offer__content">
+                    <div class="offer__left">
+                        <div class="offer__banner">
+                            <div class="offer__text">
+                                <p class="offer__big-text"><span class="offer__proc">30%</span> OFFER</p>
+                                <p class="offer__mini-text">FOR WOMEN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer__right">
+                        <div class="offer__info-items">
+                            <img class="offer__info-items-img" src="img/delivery.svg" alt="delivery"/>
+                            <div class="offer__info-items-container">
+                                <p class="offer__info__big-text">Free Delivery</p>
+                                <p class="offer__info__mini-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                            </div>
+                        </div>
+                        <div class="offer__info-items">
+                            <img class="offer__info-items-img" src="img/discount.svg" alt="discount"/>
+                            <div class="offer__info-items-container">
+                                <p class="offer__info__big-text">Sales & discounts</p>
+                                <p class="offer__info__mini-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                            </div>
+                        </div>
+                        <div class="offer__info-items">
+                            <img class="offer__info-items-img" src="img/quality.svg" alt="quality"/>
+                            <div class="offer__info-items-container">
+                                <p class="offer__info__big-text">Quality assurance</p>
+                                <p class="offer__info__mini-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <subscribe-component></subscribe-component>
+        </div>
+        <footer-component></footer-component>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>

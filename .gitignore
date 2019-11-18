@@ -1,3 +1,6 @@
-/idea/*
+/.idea/*
 *.xml
 /fontawesome/*
+/node_modules
+/.sass-cache/
+style.css.map
